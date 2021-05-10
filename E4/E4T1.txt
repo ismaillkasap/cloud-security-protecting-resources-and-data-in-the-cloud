@@ -1,0 +1,11 @@
+# Identify 2-3 changes that can be made to our environment to prevent an ssh brute force attack from the internet.
+
+-A password policy should be created for the use of stronger passwords.
+-Using Two-Factor Authentication should be made mandatory.
+-Root user should be prevented login via SSH.
+-An application server instance should be prevented from logging in via password authentication.
+-The number of unsuccessful attempts should be restricted.
+
+# Neither instance should have had access to the secret recipes bucket, in the even that instance API credentials were compromised how could we have prevented access to sensitive data.
+
+-The security policy should be updated so that the instances only have access to the free recipes bucket.

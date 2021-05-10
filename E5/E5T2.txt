@@ -1,0 +1,26 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+Terrascan
+
+### Example vulnerability
+-Use of Non-SSL/TLS
+-S3 bucket Access is allowed to all AWS Account Users
+-VPC flow logging is not enabled on all VPCs
+-HTTP port is open to internet
+-AWS CloudWatch log group is not encrypted
+
+##Scan AMI’s or containers for OS vulnerabilities
+AquaSec
+
+### Example vulnerability
+-OWASP Top 10 vulnerabilities 
+
+##Scan an AWS environment for cloud configuration vulnerabilities
+AWS SecurityHub
+
+### Example vulnerability
+-Hardware MFA is not enabled for the "root" account
+-There is an access key for the root account
+-EC2 instances have a public IPv4 address
+-CloudTrail is not enabled in all regions

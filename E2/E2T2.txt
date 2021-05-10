@@ -1,0 +1,11 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+
+Problems
+-The IAM policy is not appropriate with the least privilege principle.
+-Server-side encryption is not enabled for S3 buckets.
+-Application server traffic allow all port connections from the public subnet where the application load balancer resides.
+
+Solutions
+-The IAM policy should set as only give read access from resources.
+-Server-side encryption should be enabled for S3 buckets.
+-Application server traffic only allow connections from port 5000 where the application load balancer resides.

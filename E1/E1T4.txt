@@ -1,0 +1,4 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+
+-Role policies for S3 buckets do not comply with the Least Privileged Access methodology. Only the necessary policies should be defined to the relevant buckets. In this way, unwanted transactions that realized by undesired users will be blocked.
+-ACL rules allow all traffic on all ports from anywhere for all subnets. It is necessary to limit this access by specifying a specific port. This will reduce malicious attacks.
